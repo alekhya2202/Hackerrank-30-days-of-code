@@ -8,17 +8,17 @@ public class Solution {
     public static void main(String[] args) { 
         Scanner in = new Scanner(System.in); 
         int n = in.nextInt(); 
-        int count = 0 , min = 0; 
+        int count = 0 , max = 0; 
         
         while(n>0) { 
             if(n%2==1) { 
                 count++; 
-                if(count >= min) { 
-                    min = count; } } 
+                if(count >= max) { 
+                    max = count; } } 
             else { 
                 count = 0; } 
             n = n / 2;  } 
         
-        System.out.println(min); 
+        System.out.println(max); 
     } 
 }
